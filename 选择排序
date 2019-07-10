@@ -1,0 +1,13 @@
+//选择排序
+void rank(int *p,int n){
+	int i,j,save;
+	for(i=0;i<n;i++){
+    	for(j=i;j<n;j++){
+    		if(p[j]<p[i]){
+    			save=p[j];
+    			p[j]=p[i];
+    			p[i]=save;
+			}
+		}
+	}
+}
